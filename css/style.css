@@ -52,6 +52,7 @@ a {
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+    
 }
 .burger span {
   width: 25px;
@@ -63,6 +64,7 @@ a {
 /* Hero Banner */
 .hero-banner {
   background: url('../images/hero-metal.jpg') center/cover no-repeat;
+  
   color: white;
   padding: 100px 20px;
   text-align: center;
@@ -109,10 +111,11 @@ a {
     position: absolute;
     top: 70px;
     right: 0;
-    background: #222;
+    background: #222222;
     flex-direction: column;
     width: 100%;
     display: none;
+    z-index:1;
   }
   .nav-links.active {
     display: flex;
@@ -120,12 +123,19 @@ a {
   .burger {
     display: flex;
   }
+  
+}
+
+/* ajout effectuer */
+.hero-content.burger-opened {
+  z-index:0;
 }
 
 
 .burger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .burger.open span:nth-child(2) {
   opacity: 0;
 }
@@ -158,46 +168,3 @@ a {
   align-self: flex-start;
 }
 
-
-/*
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  padding: 2rem;
-  background: url('../images/hero-metal.jpg') no-repeat center;
-  background-size: cover;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}*/
