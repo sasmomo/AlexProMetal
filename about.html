@@ -1,17 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>À propos - AlexProMetal</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <style>
+  
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    main {
+      padding: 3rem 0;
+    }
+
+    .about-section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .highlights {
+      background: #ecf0f1;
+      padding: 1.5rem;
+      border-left: 5px solid #e63946;
+      margin-top: 2rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+
+    .about-photo {
+  margin: 2rem 0;
+  text-align: center;
+}
+.about-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.caption {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+    
+  </style>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="logo">AlexProMetal</h1>
+        <h1 class="logo">AlexProMetal</h1>
       <nav class="nav">
+      
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">À propos</a></li>
@@ -25,18 +101,73 @@
     </div>
   </header>
 
-  <!-- Contenu -->
-  <main class="container" style="padding: 2rem;">
-    <h2>À propos de AlexProMetal</h2>
-    <p>AlexProMetal est une entreprise spécialisée dans la conception d’ouvrages métalliques sur mesure, avec plus de 10 ans d’expérience dans le secteur. Notre atelier fabrique des produits robustes et personnalisés : portes, fenêtres, charpentes, conteneurs et plus encore.</p>
-    <p>Notre équipe met l'accent sur la qualité, la sécurité et l'esthétique pour chaque projet.</p>
+  <main class="container">
+    <section class="about-section">
+      <div class="about-photo">
+  <img src="images/hero-metal.jpg" alt="L'équipe AlexProMetal en atelier" />
+  <p class="caption">Notre équipe en pleine conception d’une charpente métallique sur mesure.</p>
+</div>
+      <h2>À propos de AlexProMetal</h2>
+      <p>Depuis plus de 10 ans, <strong>AlexProMetal</strong> conçoit, fabrique et installe des ouvrages métalliques sur mesure pour les professionnels et les particuliers. Spécialisée dans les structures robustes et esthétiques, notre entreprise met un point d'honneur à associer savoir-faire traditionnel et technologie moderne.</p>
+
+      <p>Nous intervenons sur une large gamme de réalisations : portes, fenêtres, charpentes métalliques, conteneurs aménagés, et bien plus. Chaque projet est pensé avec rigueur et exécuté avec passion par une équipe de professionnels qualifiés.</p>
+
+      <p>AlexProMetal est entreprise camerounais basé dans la capitale économique Douala plus
+      précisément Douala 3 en face université du campus 3 de université de Douala 
+      
+      
+      
+  <!--
+<div id="map" style="height: 400px; width: 100%; border-radius: 10px; margin-top: 2rem;b background-color: blue;"> location</div>
+
+<script>
+  function initMap() {
+    const alexProMetal = { lat: 47.4784, lng: -0.5632 }; // Exemple : Angers
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: alexProMetal,
+    });
+    const marker = new google.maps.Marker({
+      position: alexProMetal,
+      map: map,
+      title: "AlexProMetal",
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap">
+</script>
+      -->
+      
+      
+      
+      et travaille avec des partenaires de confiance pour garantir des matériaux de qualité, une exécution rapide et un rendu impeccable.</p>
+
+      <div class="highlights">
+        <p><strong>Nos valeurs :</strong></p>
+        <ul>
+          <li>✔️ Qualité et durabilité</li>
+          <li>✔️ Respect des délais et des budgets</li>
+          <li>✔️ Adaptabilité aux besoins spécifiques</li>
+          <li>✔️ Engagement envers la satisfaction client</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 AlexProMetal - Tous droits réservés</p>
   </footer>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+<!--
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>-->
 </body>
 </html>
