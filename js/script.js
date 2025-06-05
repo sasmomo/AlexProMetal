@@ -16,3 +16,15 @@ navItems.forEach(link => {
     burger.classList.remove('open');
   });
 });
+
+// changement de couleur du lien de la page actuelle dans la nav bar //
+
+  const currentPath = window.location.pathname.split('/').pop(); 
+  navItems.forEach(link => {
+    const linkPath = link.getAttribute('href');
+
+    // Comparer le lien à l'URL actuelle
+    if (linkPath === currentPath || (linkPath === 'index.html' && currentPath === '')) {
+      link.classList.add('active');
+    }
+  });
